@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -61,7 +61,30 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }} ${{ github.job }} ${{ github.sha }} ${{ github.workflow }}
-          body: ${{ github.job }} - ${{ github.sha }}
+          body: |
+            ## Changes in this Release
+
+            History from `${{ steps.attrs.outputs.tail }}` to `${{ steps.attrs.outputs.head }}`
+
+            ### Commits
+
+            ${{ steps.attrs.outputs.commits }}
+
+            ### Pull Requests
+
+            ${{ steps.attrs.outputs.prs }}
+
+            ### Contributors
+
+            ${{ steps.attrs.outputs.contributors }}
+
+            ### Files
+
+            ```
+            ${{ steps.attrs.outputs.files }}
+            ```
+          draft: false
+          prerelease: false
 
       - name: Deploy
         run: |
