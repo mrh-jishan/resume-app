@@ -1,1 +1,92 @@
-<p>resume works!</p>
+<div fxLayout="row" fxLayoutAlign="start center" class="search-bar">
+  <input class="search-input" [value]="'Robiul Hassan - Software Engineer'"/>
+  <mat-icon class="icon">close</mat-icon>
+  <mat-divider [vertical]="true" [ngStyle]="{ height: '65%'}"></mat-divider>
+  <mat-icon class="icon">mic</mat-icon>
+  <mat-icon class="icon search-icon">search</mat-icon>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="start center" class="tab">
+
+  <div class="tab-group">
+    <a routerLink="/resume">
+      <img src="assets/home.png" alt="github"/>
+      About Robiul's
+    </a>
+  </div>
+
+  <div class="tab-group">
+    <a href="https://www.github.com/mrh-jishan/" target="_blank">
+      <a href="mailto:robiul.hassan12102@gmail.com" target="_blank">
+        <img src="assets/gmail.png" alt="robiul.hassan12102@gmail.com"/>
+        robiul.hassan12102@gmail.com
+      </a>
+    </a>
+  </div>
+
+  <div class="tab-group">
+    <a href="https://mrh-jishan.github.io/mrh-jishan/" target="_blank">
+      <img src="assets/github.png" alt="github"/>
+      mrh-jishan.github.io/mrh-jishan
+    </a>
+  </div>
+
+
+  <div class="tab-group">
+    <a href="https://www.linkedin.com/in/rhsn1/" target="_blank">
+      <img src="assets/linkedin.png" alt="LinkedIn"/>
+      rhsn1
+    </a>
+  </div>
+
+
+  <div class="tab-group">
+    <a href="https://www.github.com/mrh-jishan/" target="_blank">
+      <img src="assets/github.png" alt="github"/>
+      mrh-jishan
+    </a>
+  </div>
+
+</div>
+
+<div class="search-result">
+  <p class="search-result-stats">About 125,000,000 results (0.82 seconds)</p>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="space-between start" class="main-content">
+  <div fxFlex="70" class="child">
+    <app-section title="People also ask" icon="home">
+      <div class="education">
+        <p class="question">What is Robiul's Education?</p>
+        <p>B.Sc. Computer Science, Asia Pacific University of Technology and Innovation, Malaysia. <span class="mat-button mat-accent">(May, 2015 – Nov, 2018)</span></p>
+      </div>
+
+      <div class="skills">
+        <p class="question">What are Robiul's skills?</p>
+        <p>Asia Pacific University</p>
+      </div>
+
+    </app-section>
+
+    <app-section title="Work Experience" icon="work_outline">
+
+    </app-section>
+
+    <app-section title="Projects" icon="code">
+
+    </app-section>
+  </div>
+  <div fxFlex="30" class="child">
+    <mat-card>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+

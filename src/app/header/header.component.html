@@ -1,1 +1,20 @@
-<p>header works!</p>
+<div fxLayout="column" fxLayoutAlign="center center">
+  <div [ngStyle]="{width: '100%'}">
+    <mat-toolbar>
+      <span>Resume App</span>
+      <span class="example-spacer"></span>
+      <a routerLink="home" mat-button color="accent">Home</a>
+      <a routerLink="resume" mat-button color="accent">Resume</a>
+      <a routerLink="about" mat-button color="accent">About</a>
+    </mat-toolbar>
+  </div>
+  <mat-card [ngStyle]="{width: '85%', margin: '10px 0'}">
+    <ng-content></ng-content>
+  </mat-card>
+  <div>
+    <p>ChatApp ©2021 Created by
+      <a target="_blank" [ngStyle]="{padding: '0 0'}" href="https://www.linkedin.com/in/rhsn1/"
+         class="mat-button mat-accent">Robiul Hassan</a>
+    </p>
+  </div>
+</div>

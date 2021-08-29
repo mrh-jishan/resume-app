@@ -1,0 +1,95 @@
+.search {
+  &-bar {
+    background: #fff;
+    display: flex;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    width: 690px;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+
+    .icon {
+      padding: 0 8px;
+    }
+  }
+
+  &-input {
+    background-color: transparent;
+    border: none;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+    height: 39px;
+    line-height: 39px;
+    padding-left: 14px;
+  }
+
+  &-icon {
+    color: #4285f4;
+    height: 24px;
+    width: 24px;
+    margin: auto;
+    padding-right: 13px;
+  }
+}
+
+
+.tab {
+  margin-top: 15px;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 24px;
+
+  &-group {
+    padding: 0 12px;
+    margin: 5px 1px 5px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: #151515;
+      text-decoration: none;
+      font-size: 14px;
+
+      img {
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+        vertical-align: text-bottom;
+      }
+    }
+  }
+}
+
+.tab .tab-group:first-of-type {
+  border-bottom: 2px solid #1a73e8;
+}
+
+.search-result {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Google Sans, arial, sans-serif;
+  padding-top: 4px;
+
+  &-stats {
+    color: #70757a;
+  }
+}
+
+.main-content .child {
+  padding: 0 10px;
+
+  .question {
+    color: #4285f4;
+    font-weight: bold;
+    margin: 0;
+  }
+}

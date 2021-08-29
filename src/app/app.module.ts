@@ -12,6 +12,13 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {MatCardModule} from "@angular/material/card";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatTabsModule} from "@angular/material/tabs";
+import { SectionComponent } from './section/section.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +27,8 @@ import {MatIconModule} from "@angular/material/icon";
     HomeComponent,
     ResumeComponent,
     AboutComponent,
-    Page404Component
+    Page404Component,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +36,13 @@ import {MatIconModule} from "@angular/material/icon";
     NoopAnimationsModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    FlexLayoutModule,
+    MatCardModule,
+    MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
