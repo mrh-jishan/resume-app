@@ -54,6 +54,10 @@ jobs:
         with:
           github-token: ${{ secrets.github_token }}
 
+      - name: Extract Repo Attributes
+          id: attrs # This is important for future referencing
+          uses: ibnesayeed/repo-attrs@master
+
       - name: Create Release
         uses: actions/create-release@v1
         env:
