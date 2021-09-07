@@ -16,16 +16,14 @@
   </div>
 
   <div class="tab-group">
-    <a href="https://www.github.com/mrh-jishan/" target="_blank">
-      <a href="mailto:robiul.hassan12102@gmail.com" target="_blank">
-        <img src="assets/gmail.png" alt="robiul.hassan12102@gmail.com"/>
-        robiul.hassan12102@gmail.com
-      </a>
+    <a href="mailto:robiul.hassan12102@gmail.com" matTooltip="robiul.hassan12102@gmail.com" target="_blank">
+      <img src="assets/gmail.png" alt="robiul.hassan12102@gmail.com"/>
+      robiul.hassan12102@gmail.com
     </a>
   </div>
 
   <div class="tab-group">
-    <a href="https://mrh-jishan.github.io/mrh-jishan/" target="_blank">
+    <a href="https://mrh-jishan.github.io/mrh-jishan/" matTooltip="mrh-jishan.github.io/mrh-jishan" target="_blank">
       <img src="assets/github.png" alt="github"/>
       mrh-jishan.github.io/mrh-jishan
     </a>
@@ -33,7 +31,7 @@
 
 
   <div class="tab-group">
-    <a href="https://www.linkedin.com/in/rhsn1/" target="_blank">
+    <a href="https://www.linkedin.com/in/rhsn1/" matTooltip="linkedin.com/in/rhsn1/" target="_blank">
       <img src="assets/linkedin.png" alt="LinkedIn"/>
       rhsn1
     </a>
@@ -41,7 +39,7 @@
 
 
   <div class="tab-group">
-    <a href="https://www.github.com/mrh-jishan/" target="_blank">
+    <a href="https://www.github.com/mrh-jishan/" matTooltip="github.com/mrh-jishan" target="_blank">
       <img src="assets/github.png" alt="github"/>
       mrh-jishan
     </a>
@@ -58,33 +56,72 @@
     <app-section title="People also ask" icon="home">
       <div class="education">
         <p class="question">What is Robiul's Education?</p>
-        <p>B.Sc. Computer Science, Asia Pacific University of Technology and Innovation, Malaysia. <span class="mat-button mat-accent">(May, 2015 – Nov, 2018)</span></p>
+        <p>
+          B.Sc. Computer Science, Asia Pacific University of Technology and Innovation, Malaysia
+          <span class="year-span">(May, 2015 – Nov, 2018)</span>
+        </p>
       </div>
 
       <div class="skills">
         <p class="question">What are Robiul's skills?</p>
-        <p>Asia Pacific University</p>
+        <div class="skills-list">
+          <p><strong>Front-End</strong> - JavaScript, Angular, ReactJS, Redux, Redux-Saga, SCSS, jQuery, Bootstrap,
+            HTML5,
+            ES6</p>
+          <p><strong>Back-End</strong> - Java, Ruby, Spring-Boot, Ruby on Rails, NodeJS, ExpressJS</p>
+          <p><strong>Database</strong> - MySQL, Postgres, Redis, MongoDB, CouchDB</p>
+          <p><strong>Tools</strong> - Git, Nginx, AWS, ActiveMQ, Kafka, Jenkins, Docker, K8S</p>
+        </div>
       </div>
 
     </app-section>
 
     <app-section title="Work Experience" icon="work_outline">
-
+      <div class="experience">
+        <p class="question">Robiul's career (So Far)</p>
+        <p>One day, Robiul would like to develop a Software that will improve a life of millions, but here is what he
+          has done so far... </p>
+      </div>
+      <div class="experience-list">
+        <app-experience></app-experience>
+        <app-experience></app-experience>
+        <app-experience></app-experience>
+      </div>
     </app-section>
 
     <app-section title="Projects" icon="code">
+      <ul>
+        <li><strong>Corporate Action (SRD II) </strong> - Integration with T24 and TCS Bancs for corporate action processing using spring-boot.</li>
+        <li><strong>DSL Engine (ETL)</strong> - Java based DSL engine to parse text into SQL and JavaScript to process warehouse data.</li>
+        <li><strong>myWAQF Chain </strong> - Crowdfunding dApp deployed on Hyperledger and Finterra internal consensus engine.</li>
+        <li><strong>Crypto-Exchange</strong> - Rails implementation of Ethereum and ERC20 token transfer from client to client.</li>
+      </ul>
+    </app-section>
 
+    <app-section title="Certification & Achievements" icon="book">
+      <ul>
+        <li>Quarterly Star Award (Q3/2020) – Credit Suisse</li>
+        <li>Ultimate AWS Certified Developer Associate 2020 – Udemy</li>
+        <li>Certified Kubernetes Application Developer 2020 -Udemy</li>
+        <li>Winner of “Battle of Hacker - Hackathon” organized by APU forensic and cybersecurity</li>
+        <li>Organizer of APU Math & Science week – 2015 (Organizing Committee member)</li>
+      </ul>
     </app-section>
   </div>
   <div fxFlex="30" class="child">
     <mat-card>
       <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
       <mat-card-content>
-        <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
-        </p>
+        <h4>Md Robiul Hassan</h4>
+        <p>Software Engineer</p>
+        <p>Robiul Hassan was a Bangladesh-born Software-Engineer, claimed himself to be one of the Software-Engineer with a bachelor degree in Computer-Science. Robiul has experience in end-to-end Software Solution delivery as well as migrating monolithic application to microservices on popular cloud like AWS and Open-Shift using Kubernetes and Helm.</p>
+
+        <ul>
+          <li><strong>Born</strong>: 8 Sept 1995</li>
+          <li><strong>Location</strong>: <a href="https://geohack.toolforge.org/geohack.php?pagename=Tampines&params=1_20_58.53_N_103_57_24.44_E_type:city(259900)_region:SG-02">Tampines, SG</a> </li>
+          <li><strong>Language</strong>: Ruby, Java</li>
+          <li><strong>Food</strong>: Chicken Wings</li>
+        </ul>
       </mat-card-content>
     </mat-card>
   </div>

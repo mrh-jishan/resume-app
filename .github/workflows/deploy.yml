@@ -64,7 +64,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }} ${{ github.job }} ${{ github.sha }} ${{ github.workflow }}
+          release_name: Release ${{ github.ref }}
           body: |
             ## Changes in this Release
 
@@ -89,6 +89,8 @@ jobs:
             ```
           draft: false
           prerelease: false
+          owner: ownerA
+          repo: A
 
       - name: Deploy
         run: |

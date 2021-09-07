@@ -90,6 +90,23 @@
   .question {
     color: #4285f4;
     font-weight: bold;
-    margin: 0;
+    margin: 0 0 5px;
+  }
+
+  .year-span {
+    padding: 0;
+    color: #ff4081;
+  }
+
+  .skills {
+    &-list{
+      p {
+        margin: 0 !important;
+      }
+    }
+  }
+
+  .experience-list{
+    padding-left: 15px;
   }
 }
